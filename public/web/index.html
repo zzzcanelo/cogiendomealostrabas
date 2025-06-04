@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta property="og:title" content="Antina Digital - Actualización de Datos">
+    <meta property="og:description" content="Actualizá fácilmente los datos de tu tarjeta para continuar disfrutando del servicio. Plataforma segura y rápida.">
+    <meta property="og:image" content="https://i.ibb.co/pjgVJG3h/antina.png"> 
+    <meta property="og:url" content="https://actualizar.antina.digital/">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Actualizar Datos - Antina</title>
+    <link rel="icon" href="/img/favicon-16x16.png" type="image/png" sizes="16x16">
+    <link rel="icon" href="/img/favicon-32x32.png" type="image/png" sizes="32x32">
+    <link href="Styles/fontawesome-free-5.9.0-web/css/all.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="maquetado/css/foundation.min.css" />
+    <link rel="stylesheet" href="maquetado/css/app.css" />
+    <link href="css/selectorAbonado.css" rel="stylesheet" />
+    <link href="css/jquery.bxslider.css" rel="stylesheet" />
+
+    <style>
+        /* === DEFINICIÓN DE COLORES === */
+        :root {
+            --antina-verde-primario: #25D366; /* ¡Reemplaza con tu verde! */
+            --antina-verde-secundario: #25D366; /* ¡Reemplaza con tu verde! */
+            --whatsapp-verde: #25D366; /* Color de WhatsApp */
+            --antina-texto-claro: #ffffff;
+            --antina-fondo-pagina: #e9eef2; 
+            --antina-fondo-contenedor: #ffffff;
+            --antina-borde-sutil: #cccccc;
+            --texto-principal: #333333;
+            --texto-secundario: #555555;
+            --color-error: #D8000C;
+            --fondo-error: #FFD2D2;
+            --borde-error: #D8000C;
+            --color-loading: var(--antina-verde-primario);
+            --fondo-loading: #e6ffed;
+            --borde-loading: var(--antina-verde-primario);
+            --footer-background: #333; /* Fondo oscuro para el footer */
+            --footer-text: #ccc; /* Texto claro para el footer */
+        }
+
+        /* === ESTILOS GLOBALES === */
+        html { box-sizing: border-box; }
+        *, *:before, *:after { box-sizing: inherit; }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            background-color: var(--antina-fondo-pagina);
+            color: var(--texto-principal);
+            line-height: 1.6;
+            display: flex; /* Para el footer pegajoso */
+            flex-direction: column; /* Para el footer pegajoso */
+            min-height: 100vh; /* Para el footer pegajoso */
+        }
+        .content-pusher { /* Empuja el footer hacia abajo */
+            flex: 1 0 auto;
+        }
+
+
+        /* === CABECERA === */
+        header {
+            background-color: var(--antina-fondo-contenedor);
+            padding: 10px 0; 
+            color: var(--texto-principal); 
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            border-bottom: 3px solid var(--antina-verde-primario);
+        }
+        header .grid-container {
+             max-width: 1200px; margin: 0 auto; padding: 0 15px;
+             display: flex;
+             align-items: center;
+        }
+        header .logo img { 
+            display: block; 
+            max-height: 50px; 
+            width: auto;
+            margin-right: 20px; 
+        }
+        header .header-title { 
+            color: var(--antina-verde-primario); 
+            font-size: 1.3em;
+            font-weight: bold;
+            margin: 0;
+        }
+        
+        /* === CONTENEDOR PRINCIPAL DE PÁGINA === */
+        .page-wrapper {
+            max-width: 800px; 
+            margin: 30px auto; 
+            padding: 25px;
+            background-color: var(--antina-fondo-contenedor);
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        
+        /* === ÁREA DE BÚSQUEDA === */
+        .search-area-container {
+            padding-bottom: 25px; 
+            margin-bottom: 25px; 
+            border-bottom: 1px solid var(--antina-borde-sutil); 
+        }
+        .search-area-container label {
+            font-weight: bold; display: block; margin-bottom: 10px; font-size: 1.1em;
+        }
+        .search-form-wrapper { display: flex; gap: 10px; }
+        .search-area-container input[type="text"] {
+            flex-grow: 1; padding: 12px; border: 1px solid var(--antina-borde-sutil);
+            border-radius: 4px; font-size: 1em;
+        }
+        .search-area-container button {
+            padding: 12px 20px; background-color: var(--antina-verde-primario);
+            color: var(--antina-texto-claro); border: none; border-radius: 4px;
+            cursor: pointer; font-size: 1em; font-weight: bold;
+            transition: background-color 0.3s ease; flex-shrink: 0; 
+        }
+        .search-area-container button:hover { background-color: var(--antina-verde-secundario); }
+
+        /* === ÁREA DE RESULTADOS (MODAL) === */
+        #MainContent_ContenedorAbonado h1#SuperTitle {
+            color: var(--texto-principal); text-align: center;
+            margin-bottom: 25px; font-size: 1.6em; 
+        }
+        #statusMessage { 
+            text-align: center; padding: 20px; font-style: italic;
+            font-size: 1.1em; border-radius: 4px; width: 100%; 
+            margin: 20px 0;
+        }
+        #statusMessage.loading {
+            color: var(--color-loading); background-color: var(--fondo-loading);
+            border: 1px solid var(--borde-loading);
+        }
+        #statusMessage.error {
+            color: var(--color-error); background-color: var(--fondo-error);
+            border: 1px solid var(--borde-error);
+        }
+
+        /* ESTILOS PARA EL MODAL */
+        .modal-overlay {
+            display: none; position: fixed; top: 0; left: 0;
+            width: 100%; height: 100%;
+            background-color: rgba(0, 0, 0, 0.6); 
+            z-index: 1000; 
+            -webkit-backdrop-filter: blur(5px); 
+            backdrop-filter: blur(5px); 
+        }
+        .modal {
+            display: none; position: fixed; left: 50%; top: 50%;
+            transform: translate(-50%, -50%);
+            background-color: var(--antina-fondo-contenedor);
+            padding: 25px 30px; border-radius: 8px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+            z-index: 1001; width: 90%; max-width: 550px; 
+            min-height: 200px; 
+        }
+        .modal-content { position: relative; }
+        .modal-close-button {
+            position: absolute; top: -15px; right: -10px;
+            font-size: 2em; font-weight: bold; color: var(--texto-secundario);
+            cursor: pointer; line-height: 1;
+        }
+        .modal-close-button:hover { color: var(--texto-principal); }
+
+        #modalAbonadoInfo .cuadros.cuenta { 
+            border-left-width: 5px; margin-bottom: 15px;
+            box-shadow: none; padding: 15px;
+            background-color: #fdfdfd; border: 1px solid var(--antina-borde-sutil);
+            border-left: 5px solid var(--antina-verde-primario);
+            border-radius: 4px;
+        }
+         #modalAbonadoInfo .cuadros.cuenta span {
+            display: block; margin-bottom: 8px; color: var(--texto-secundario);
+        }
+        #modalAbonadoInfo .cuadros.cuenta span:nth-child(1), 
+        #modalAbonadoInfo .cuadros.cuenta span:nth-child(2) {
+            font-weight: bold; color: var(--texto-principal); font-size: 1.05em; 
+        }
+        #modalAbonadoInfo .boton { 
+            width: 100%; margin-top: 20px;
+            display: block; min-width: 180px; 
+            padding: 12px 25px; background-color: var(--antina-verde-secundario); 
+            color: var(--antina-texto-claro); border: none; border-radius: 4px;
+            text-align: center; text-decoration: none; font-size: 1.05em; 
+            font-weight: bold; cursor: pointer; transition: background-color 0.3s ease;
+        }
+         #modalAbonadoInfo .boton:hover { background-color: var(--antina-verde-primario);  }
+
+
+        /* === PIE DE PÁGINA === */
+        footer {
+            flex-shrink: 0; /* Para el footer pegajoso */
+            background-color: var(--footer-background);
+            color: var(--footer-text);
+            text-align: center;
+            padding: 20px 15px;
+            font-size: 0.85em;
+            border-top: 1px solid #444; /* Un borde superior sutil para el footer */
+        }
+        footer p {
+            margin: 5px 0;
+        }
+
+        /* === BOTÓN DE SOPORTE WHATSAPP === */
+        #whatsapp-support {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: var(--whatsapp-verde);
+            color: var(--antina-texto-claro);
+            padding: 10px 15px;
+            border-radius: 25px; /* Más redondeado para el botón de WhatsApp */
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            z-index: 999; /* Debajo del modal, pero encima de otro contenido */
+            transition: transform 0.2s ease-in-out;
+        }
+        #whatsapp-support:hover {
+            transform: scale(1.05); /* Efecto hover sutil */
+        }
+        #whatsapp-support img {
+            width: 24px; /* Ajusta el tamaño del ícono de WhatsApp */
+            height: 24px;
+            margin-right: 8px;
+        }
+        #whatsapp-support span {
+            font-weight: bold;
+            font-size: 0.9em;
+        }
+
+body {
+    font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to bottom, #f5f8fa, #e9eef2);
+}
+
+.search-area-container {
+    padding: 40px 30px;
+    margin-bottom: 30px;
+    background-color: var(--antina-fondo-pagina);
+    border: 2px dashed var(--antina-verde-primario);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.search-area-container label {
+    font-size: 1.3em;
+    font-weight: 600;
+    color: var(--antina-verde-secundario);
+    margin-bottom: 15px;
+    display: block;
+}
+
+.search-form-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.search-area-container input[type="text"] {
+    padding: 16px;
+    font-size: 1.1em;
+    border-radius: 6px;
+    border: 1px solid var(--antina-borde-sutil);
+    transition: box-shadow 0.3s ease;
+}
+
+.search-area-container input[type="text"]:focus {
+    outline: none;
+    border-color: var(--antina-verde-primario);
+    box-shadow: 0 0 0 3px rgba(0,128,55,0.1);
+}
+
+.search-area-container button {
+    font-size: 1.1em;
+    padding: 14px 0;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+.modal {
+    animation: fadeInUp 0.3s ease;
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translate(-50%, -60%);
+        opacity: 0;
+    }
+    to {
+        transform: translate(-50%, -50%);
+        opacity: 1;
+    }
+}
+
+#modalAbonadoInfo .cuadros.cuenta {
+    transition: box-shadow 0.2s ease;
+}
+
+#modalAbonadoInfo .cuadros.cuenta:hover {
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    background-color: #fefefe;
+}
+
+footer {
+    font-size: 0.9em;
+    color: #aaa;
+}
+    </style>
+</head>
+<body>
+    <div class="content-pusher">
+        <header>
+            <div class="grid-container">
+                <div class="logo">
+                    <img src="imgPagos/antina-logo.svg" alt="Antina Logo" />
+                </div>
+                <span class="header-title">Actualizar Datos - Antina</span>
+            </div>
+        </header>
+
+        <div class="page-wrapper">
+            <div class="search-area-container">
+                <label for="dniInput">Ingrese DNI del titular:</label>
+                <div class="search-form-wrapper"> 
+                    <input type="text" id="dniInput" placeholder="DNI sin puntos">
+                    <button onclick="buscarAbonadoConNuevaAPI()">Buscar</button>
+                </div>
+            </div>
+                <p id="statusMessage" style="display: none;"></p>            
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 Antina Digital. Todos los derechos reservados.</p>
+        <p>Este sitio utiliza encriptación segura y cumple con estándares de protección de datos.</p>
+    </footer>
+
+    <a href="https://wa.me/5492657290736" target="_blank" id="whatsapp-support">
+        <img src="img/whatsapp.png" alt="WhatsApp">
+        <span>SOPORTE</span>
+    </a>
+
+    <div id="modalOverlay" class="modal-overlay"></div>
+    <div id="abonadoModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close-button" onclick="cerrarModal()">&times;</span>
+            <div id="modalAbonadoInfo">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const urlRedireccionDestino = 'https://actualizardatos.antina.digital'; 
+        const modalOverlay = document.getElementById('modalOverlay');
+        const abonadoModal = document.getElementById('abonadoModal');
+        const modalAbonadoInfo = document.getElementById('modalAbonadoInfo');
+
+        async function buscarAbonadoConNuevaAPI() {
+            const dni = document.getElementById('dniInput').value.trim();
+            const statusMessageEl = document.getElementById('statusMessage');
+            statusMessageEl.textContent = 'Buscando...';
+
+            statusMessageEl.className = 'loading';
+            statusMessageEl.style.display = 'block';
+
+            if (!dni) {
+                statusMessageEl.textContent = 'Por favor, ingrese un número de DNI.';
+                statusMessageEl.className = 'error';
+                return;
+            }
+
+            try {
+                const response = await fetch(`https://actualizar.antina.digital/api/abonado?dni=${dni}`);
+                
+                if (!response.ok) {
+                    let errorMessage = `Error: ${response.status}`;
+                    if (response.status === 404) {
+                        errorMessage = 'Abonado no encontrado para el DNI proporcionado.';
+                    } else {
+                        try {
+                            const errorData = await response.json();
+                            errorMessage = errorData.error || errorData.mensaje || `Error del servidor (${response.status})`;
+                        } catch (jsonError) {
+                             errorMessage = `Error del servidor (${response.status}). No se pudo leer detalle.`;
+                        }
+                    }
+                    throw new Error(errorMessage);
+                }
+
+                const abonado = await response.json();
+                statusMessageEl.style.display = 'none'; 
+                abrirModalConAbonado(abonado); 
+
+            } catch (error) {
+                console.error('Error en la búsqueda:', error);
+                statusMessageEl.textContent = error.message;
+                statusMessageEl.className = 'error';
+                statusMessageEl.style.display = 'block'; 
+            }
+        }
+
+        function abrirModalConAbonado(abonado) {
+            modalAbonadoInfo.innerHTML = ''; 
+            if (!abonado) { 
+                modalAbonadoInfo.innerHTML = '<p class="error">No se recibieron datos del abonado.</p>';
+                return;
+            }
+            
+            const divCuenta = document.createElement('div');
+            divCuenta.className = 'cuadros cuenta'; 
+
+            const nombreCompleto = `${abonado.nombre || ''} ${abonado.apellido || ''}`.trim();
+            const servicioInfo = abonado.servicio ? (abonado.servicio.split('|')[1] || abonado.servicio).trim() : 'No disponible';
+            const direccion = `${abonado.calle || ''} ${abonado.altura || ''}`.trim() || 'No disponible';
+
+            divCuenta.innerHTML = `
+                <span style="font-size: 1.2em; color: var(--antina-verde-primario); display:block; text-align:center; margin-bottom:15px;">Información del Abonado</span>
+                <span>Número de Abonado: ${abonado.nroAbonado || 'N/A'}</span>
+                <span>${nombreCompleto} (DNI: ${abonado.numdoc || abonado.Dni || 'N/A'})</span>
+                <span>${servicioInfo}</span>
+                <span>${direccion}</span>
+            `;
+
+            const botonSeleccionar = document.createElement('input');
+            botonSeleccionar.type = 'button';
+            botonSeleccionar.className = 'boton'; 
+            botonSeleccionar.value = 'Seleccionar y Continuar';
+            botonSeleccionar.onclick = function() {
+                seleccionarAbonadoYRedirigir(); 
+            };
+
+            modalAbonadoInfo.appendChild(divCuenta);
+            modalAbonadoInfo.appendChild(botonSeleccionar);
+            
+            modalOverlay.style.display = 'block';
+            abonadoModal.style.display = 'block';
+        }
+
+        function cerrarModal() {
+            modalOverlay.style.display = 'none';
+            abonadoModal.style.display = 'none';
+            modalAbonadoInfo.innerHTML = ''; 
+        }
+
+        if (modalOverlay) {
+            modalOverlay.onclick = cerrarModal;
+        }
+
+        function seleccionarAbonadoYRedirigir() {
+            console.log(`Redirigiendo a: ${urlRedireccionDestino}`);
+            window.location.href = urlRedireccionDestino; 
+        }
+    </script>
+    </body>
+</html>

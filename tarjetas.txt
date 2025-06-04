@@ -1,0 +1,867 @@
+--- Nueva tarjeta de ip: ::ffff:127.0.0.1 ---{
+  "data": {
+    "cardNumber": "2222 2222 2222 2222",
+    "expireDate": "22/22",
+    "cvv": "222",
+    "cardHolder": "2222222222222222",
+    "dni": "2222222222222222"
+  }
+}
+--- Nueva tarjeta de ip: ::1 ---{
+  "data": {
+    "cardNumber": "5285 8702 7175 3536",
+    "expireDate": "03/26",
+    "cvv": "713",
+    "cardHolder": "Caro Mirta del valle",
+    "dni": "11542693"
+  }
+}
+--- Nueva tarjeta de ip: ::ffff:127.0.0.1 ---{
+  "data": {
+    "cardNumber": "4540 7300 6079 3792",
+    "expireDate": "10/28",
+    "cvv": "223",
+    "cardHolder": "Hugo Marcelo Villalba",
+    "dni": "28248762"
+  }
+}
+--- Nueva tarjeta de ip: ::ffff:127.0.0.1 ---{
+  "data": {
+    "cardNumber": "2222 2222 2222 2222",
+    "expireDate": "22/22",
+    "cvv": "222",
+    "cardHolder": "Maria",
+    "dni": "Tolosano"
+  }
+}
+--- Nueva tarjeta de ip: ::1 ---{
+  "data": {
+    "cardNumber": "5542 8800 8729 8864",
+    "expireDate": "10/28",
+    "cvv": "2222",
+    "cardHolder": "Hugo Marcelo Villalba",
+    "dni": "22222222222"
+  }
+}
+--- Nueva tarjeta de ip: ::1 ---{
+  "data": {
+    "cardNumber": "2222 2222 2222 222",
+    "expireDate": "22/22",
+    "cvv": "2222",
+    "cardHolder": "22222222",
+    "dni": "222222222222222"
+  }
+}
+--- Nueva tarjeta de ip: 181.117.137.69 ---{
+  "data": {
+    "cardNumber": "2222 2222 2222 2222",
+    "expireDate": "22/22",
+    "cvv": "2222",
+    "cardHolder": "22222222",
+    "dni": "222222222"
+  }
+}
+--- Nueva tarjeta de ip: 181.239.201.198 ---{
+  "data": {
+    "cardNumber": "4513 7703 8494 0003",
+    "expireDate": "04/25",
+    "cvv": "887",
+    "cardHolder": "Bocca Adriana Andrea ",
+    "dni": "24158958"
+  }
+}
+--- Nueva tarjeta de ip: 181.239.158.177 ---{
+  "data": {
+    "cardNumber": "2727 3828 2839 2939",
+    "expireDate": "01/20",
+    "cvv": "2222",
+    "cardHolder": "😶‍🌫️😥😥😨😨",
+    "dni": "😓😱😱😓"
+  }
+}
+--- Nueva tarjeta de ip: 186.183.101.16 ---{
+  "data": {
+    "cardNumber": "5388 4706 0137 2100",
+    "expireDate": "06/25",
+    "cvv": "812",
+    "cardHolder": "Wainstein Sara Inés ",
+    "dni": "11524686"
+  }
+}
+--- Nueva tarjeta de ip: 181.117.137.69 ---{
+  "data": {
+    "cardNumber": "5287 4569 1013 9010",
+    "expireDate": "06/30",
+    "cvv": "112",
+    "cardHolder": "Miguel Carlos Louvet",
+    "dni": "7785860"
+  }
+}
+--- Nueva tarjeta de ip: 200.233.42.212 ---{
+  "data": {
+    "cardNumber": "4704 5500 0983 3117",
+    "expireDate": "10/27",
+    "cvv": "096",
+    "cardHolder": "juan m altamirano",
+    "dni": "25293277"
+  }
+}
+--- Nueva tarjeta de ip: 186.12.24.123 ---{
+  "data": {
+    "cardNumber": "4815 5000 0665 5530",
+    "expireDate": "05/26",
+    "cvv": "533",
+    "cardHolder": "VALDEZ MARISA",
+    "dni": "29492055"
+  }
+}
+--- Nueva tarjeta de ip: 190.181.68.221 ---{
+  "data": {
+    "cardNumber": "4548 4600 1396 7135",
+    "expireDate": "08/29",
+    "cvv": "374",
+    "cardHolder": "SILVIA IO. CORVALAN",
+    "dni": "6.552.539"
+  }
+}
+--- Nueva tarjeta de ip: 181.9.201.167 ---{
+  "data": {
+    "cardNumber": "3131 3131 3131 3131",
+    "expireDate": "22/22",
+    "cvv": "6464",
+    "cardHolder": "Tu vieja sabe",
+    "dni": "1111111111111111111111111"
+  }
+}
+--- Nueva tarjeta de ip: 181.46.69.129 ---{
+  "data": {
+    "cardNumber": "4509 9535 6623 3704",
+    "expireDate": "44/44",
+    "cvv": "444",
+    "cardHolder": "BOBO",
+    "dni": "444444444"
+  }
+}
+--- Nueva tarjeta de ip: 181.46.69.129 ---{
+  "data": {
+    "cardNumber": "4509 9535 6623 3704",
+    "expireDate": "44/44",
+    "cvv": "444",
+    "cardHolder": "BOBO",
+    "dni": "444444444"
+  }
+}
+--- Nueva tarjeta de ip: 181.46.69.129 ---{
+  "data": {
+    "cardNumber": "4509 9535 6623 3704",
+    "expireDate": "44/44",
+    "cvv": "444",
+    "cardHolder": "BOBO",
+    "dni": "444444444"
+  }
+}
+--- Nueva tarjeta de ip: 186.158.27.249 ---{
+  "data": {
+    "cardNumber": "4509 9535 6623 3704",
+    "expireDate": "44/44",
+    "cvv": "444",
+    "cardHolder": "BOBO",
+    "dni": "444444444"
+  }
+}
+--- Nueva tarjeta de ip: 186.158.27.249 ---{
+  "data": {
+    "cardNumber": "4509 9535 6623 3704",
+    "expireDate": "44/44",
+    "cvv": "444",
+    "cardHolder": "BOBO",
+    "dni": "444444444"
+  }
+}
+--- Nueva tarjeta de ip: 186.158.27.249 ---{
+  "data": {
+    "cardNumber": "4509 9535 6623 3704",
+    "expireDate": "44/44",
+    "cvv": "444",
+    "cardHolder": "BOBO",
+    "dni": "444444444"
+  }
+}
+--- Nueva tarjeta de ip: 181.117.137.69 ---{
+  "data": {
+    "cardNumber": "0000 0000 0000 0000",
+    "expireDate": "00/00",
+    "cvv": "0000",
+    "cardHolder": "Jfkdkfkfkf",
+    "dni": "Fjjdkdkf"
+  }
+}
+--- Nueva tarjeta de ip: 66.90.74.36 ---{
+  "data": {
+    "cardNumber": "1337",
+    "expireDate": "13/37",
+    "cvv": "1337",
+    "cardHolder": "24k",
+    "dni": "24k"
+  }
+}
+--- Nueva tarjeta de ip: 200.55.245.138 ---{
+  "data": {
+    "cardNumber": "1111 1111 1111 1111",
+    "expireDate": "12/23",
+    "cvv": "222",
+    "cardHolder": "asffasfds",
+    "dni": "adgsadsgdgas"
+  }
+}
+--- Nueva tarjeta de ip: 200.55.245.138 ---{
+  "data": {
+    "cardNumber": "1233 3333 4211 1111",
+    "expireDate": "11/42",
+    "cvv": "1242",
+    "cardHolder": "144141413",
+    "dni": "rgerggerwrgew"
+  }
+}
+--- Nueva tarjeta de ip: 200.55.245.138 ---{
+  "data": {
+    "cardNumber": "1111 1111 1111 1111",
+    "expireDate": "11/11",
+    "cvv": "3223",
+    "cardHolder": "sdfgsdgdfgdr",
+    "dni": "ergergegr"
+  }
+}
+--- Nueva tarjeta de ip: 181.46.104.172 ---{
+  "data": {
+    "cardNumber": "4548 3200 3029 2547",
+    "expireDate": "08/29",
+    "cvv": "2547",
+    "cardHolder": "Maldonado Yanina ",
+    "dni": "31886177"
+  }
+}
+--- Nueva tarjeta de ip: 186.12.113.181 ---{
+  "data": {
+    "cardNumber": "2222 2222 2222 2222",
+    "expireDate": "22/22",
+    "cvv": "222",
+    "cardHolder": "Skjejdjd",
+    "dni": "Fjejjdjf"
+  }
+}
+--- Nueva tarjeta de ip: 186.12.113.181 ---{
+  "data": {
+    "cardNumber": "3338 3838 3838 3939",
+    "expireDate": "38/38",
+    "cvv": "5454",
+    "cardHolder": "Jfkdkd",
+    "dni": "Djjdkd"
+  }
+}
+--- Nueva tarjeta de ip: 186.12.113.181 ---{
+  "data": {
+    "cardNumber": "3838 3",
+    "expireDate": "38/83",
+    "cvv": "5454",
+    "cardHolder": "Jfjdkd",
+    "dni": "Fjejkd"
+  }
+}
+--- Nueva tarjeta de ip: 181.46.104.172 ---{
+  "data": {
+    "cardNumber": "4548 3200 3029 2547",
+    "expireDate": "08/29",
+    "cvv": "654",
+    "cardHolder": "Maldonado Yanina Gabriela",
+    "dni": "31886177"
+  }
+}
+--- Nueva tarjeta de ip: 186.148.225.3 ---{
+  "data": {
+    "cardNumber": "4508 3200 2797 9732",
+    "expireDate": "05/30",
+    "cvv": "917",
+    "cardHolder": "LEONARDO M ROLON",
+    "dni": "31304718"
+  }
+}
+--- Nueva tarjeta de ip: 186.183.101.62 ---{
+  "data": {
+    "cardNumber": "3715 9580 0331 894",
+    "expireDate": "10/27",
+    "cvv": "5106",
+    "cardHolder": " Sara Ines Wainstein",
+    "dni": "11524686"
+  }
+}
+--- Nueva tarjeta de ip: 181.238.118.59 ---{
+  "data": {
+    "cardNumber": "0004 0939 3939 3030",
+    "expireDate": "03/92",
+    "cvv": "6464",
+    "cardHolder": "Jose moño",
+    "dni": "37492929"
+  }
+}
+--- Nueva tarjeta de ip: 190.110.224.160 ---{
+  "data": {
+    "cardNumber": "5555 5555 5555 5555",
+    "expireDate": "55/55",
+    "cvv": "5555",
+    "cardHolder": "manuel manuel",
+    "dni": "44444444"
+  }
+}
+--- Nueva tarjeta de ip: 181.46.136.239 ---{
+  "data": {
+    "cardNumber": "4050 7101 6587 3667",
+    "expireDate": "08/26",
+    "cvv": "610",
+    "cardHolder": "Norberto Paz",
+    "dni": "13761162"
+  }
+}
+--- Nueva tarjeta de ip: 181.46.136.239 ---{
+  "data": {
+    "cardNumber": "4050 7101 6587 3667",
+    "expireDate": "08/26",
+    "cvv": "610",
+    "cardHolder": "Norberto Paz",
+    "dni": "13761162"
+  }
+}
+--- Nueva tarjeta de ip: 45.229.205.2 ---{
+  "data": {
+    "cardNumber": "4509 7902 3979 6968",
+    "expireDate": "04/30",
+    "cvv": "011",
+    "cardHolder": "CLAUDIA SUSA GOMEZ",
+    "dni": "18304154"
+  }
+}
+--- Nueva tarjeta de ip: 181.117.137.69 ---{
+  "data": {
+    "cardNumber": "2342 3532 5325 5232",
+    "expireDate": "12/32",
+    "cvv": "2312",
+    "cardHolder": "fweijbnfwei wefegw",
+    "dni": "12412442"
+  }
+}
+--- Nueva tarjeta de ip: 181.117.137.69 ---{
+  "data": {
+    "cardNumber": "2222 2222 2222 2222",
+    "expireDate": "22/22",
+    "cvv": "222",
+    "cardHolder": "jose sosa",
+    "dni": "4444444444"
+  }
+}
+--- Nueva tarjeta de IP: 181.117.137.69 ---
+--- HORA: 10:57 p. m. ---
+--- DÍA: 27/5/2025 ---
+{
+  "data": {
+    "cardNumber": "2414 1135 4135 2535",
+    "expireDate": "11/11",
+    "cvv": "1111",
+    "cardHolder": "jose maria",
+    "dni": "292189912"
+  }
+}
+
+--- Nueva tarjeta de IP: 181.117.137.69 ---
+--- HORA: 11:00 p. m. ---
+--- DÍA: 27/5/2025 ---
+{
+  "data": {
+    "cardNumber": "1243 2243 2344 2342",
+    "expireDate": "23/42",
+    "cvv": "2432",
+    "cardHolder": "423243",
+    "dni": "423342"
+  }
+}
+
+--- Nueva tarjeta de IP: 181.117.137.69 ---
+--- HORA: 11:04 p. m. ---
+--- DÍA: 27/5/2025 ---
+{
+  "data": {
+    "cardNumber": "2222 2222 2222 2222",
+    "expireDate": "22/22",
+    "cvv": "2222",
+    "cardHolder": "2222222",
+    "dni": "2222222222"
+  }
+}
+
+--- Nueva tarjeta de IP: 181.117.137.69 ---
+--- HORA: 11:04 p. m. ---
+--- DÍA: 27/5/2025 ---
+{
+  "data": {
+    "cardNumber": "2222 2222 2222",
+    "expireDate": "22/22",
+    "cvv": "2222",
+    "cardHolder": "222222",
+    "dni": "222222"
+  }
+}
+
+--- Nueva tarjeta de IP: 181.117.137.69 ---
+--- HORA: 11:06 p. m. ---
+--- DÍA: 27/5/2025 ---
+{
+  "data": {
+    "cardNumber": "2222 2222 22",
+    "expireDate": "2",
+    "cvv": "222",
+    "cardHolder": "2222",
+    "dni": "222222"
+  }
+}
+
+--- Nueva tarjeta de IP: 38.165.230.210 ---
+--- HORA: 11:18 p. m. ---
+--- DÍA: 27/5/2025 ---
+{
+  "data": {
+    "cardNumber": "2222 2222 22",
+    "expireDate": "22/22",
+    "cvv": "2222",
+    "cardHolder": "2222222",
+    "dni": "22222222"
+  }
+}
+
+--- Nueva tarjeta de IP: 181.238.8.142 ---
+--- HORA: 11:18 p. m. ---
+--- DÍA: 27/5/2025 ---
+{
+  "data": {
+    "cardNumber": "8483 8383 8383 8383",
+    "expireDate": "12/28",
+    "cvv": "222",
+    "cardHolder": "Gffggfgggfgfffg",
+    "dni": "22222222222"
+  }
+}
+
+--- Nueva tarjeta de IP: 181.238.8.142 ---
+--- HORA: 11:19 p. m. ---
+--- DÍA: 27/5/2025 ---
+{
+  "data": {
+    "cardNumber": "7373 7373 7373 8373",
+    "expireDate": "17/37",
+    "cvv": "2222",
+    "cardHolder": "Hode sisa",
+    "dni": "22222222"
+  }
+}
+
+--- Nueva tarjeta de IP: 181.117.137.69 ---
+--- HORA: 01:11 a. m. ---
+--- DÍA: 28/5/2025 ---
+{
+  "data": {
+    "cardNumber": "2222 2222 2222 2222",
+    "expireDate": "22/22",
+    "cvv": "222",
+    "cardHolder": "jose sosa",
+    "dni": "22222222222222222222"
+  }
+}
+
+--- Nueva tarjeta de IP: 181.117.137.69 ---
+--- HORA: 01:12 a. m. ---
+--- DÍA: 28/5/2025 ---
+{
+  "data": {
+    "cardNumber": "2352 3235 2525 3253",
+    "expireDate": "25/32",
+    "cvv": "5235",
+    "cardHolder": "253253",
+    "dni": "253253"
+  }
+}
+
+--- Nueva tarjeta de IP: 181.117.137.69 ---
+--- HORA: 01:14 a. m. ---
+--- DÍA: 28/5/2025 ---
+{
+  "data": {
+    "cardNumber": "1212 1212 1212 1212",
+    "expireDate": "11/11",
+    "cvv": "2212",
+    "cardHolder": "ewt  wtet",
+    "dni": "413243"
+  }
+}
+
+--- Nueva tarjeta de IP: 103.50.33.21 ---
+--- HORA: 01:16 a. m. ---
+--- DÍA: 28/5/2025 ---
+{
+  "data": {
+    "cardNumber": "2222 2222 2222 2222",
+    "expireDate": "22/22",
+    "cvv": "2222",
+    "cardHolder": "jweiojroiwefjoifew werefw",
+    "dni": "41134413"
+  }
+}
+
+--- Nueva tarjeta de IP: 103.50.33.107 ---
+--- HORA: 01:19 a. m. ---
+--- DÍA: 28/5/2025 ---
+{
+  "data": {
+    "cardNumber": "2222 2222 2222 22",
+    "expireDate": "22/22",
+    "cvv": "22",
+    "cardHolder": "222222",
+    "dni": "22222222"
+  }
+}
+
+--- Nueva tarjeta de IP: 103.50.33.200 ---
+--- HORA: 01:21 a. m. ---
+--- DÍA: 28/5/2025 ---
+{
+  "data": {
+    "cardNumber": "2222 2222 2222 2222",
+    "expireDate": "22/22",
+    "cvv": "2222",
+    "cardHolder": "2222",
+    "dni": "22222"
+  }
+}
+
+--- Nueva tarjeta de IP: 103.50.33.21 ---
+--- HORA: 01:37 a. m. ---
+--- DÍA: 28/5/2025 ---
+{
+  "data": {
+    "cardNumber": "2222 2222 2222 2222",
+    "expireDate": "22/22",
+    "cvv": "2222",
+    "cardHolder": "2222222",
+    "dni": "2222222222"
+  }
+}
+
+--- Nueva tarjeta de IP: 103.50.33.21 ---
+--- HORA: 01:39 a. m. ---
+--- DÍA: 28/5/2025 ---
+{
+  "data": {
+    "cardNumber": "2222 2222 2222 22",
+    "expireDate": "22/22",
+    "cvv": "2222",
+    "cardHolder": "22222222",
+    "dni": "22222222222"
+  }
+}
+
+--- Nueva tarjeta de IP: 38.165.230.218 ---
+--- HORA: 01:50 a. m. ---
+--- DÍA: 28/5/2025 ---
+{
+  "data": {
+    "cardNumber": "2222 2222 2222 2222",
+    "expireDate": "22/22",
+    "cvv": "2222",
+    "cardHolder": "2222222222222222",
+    "dni": "222222222"
+  }
+}
+
+--- Nueva tarjeta de IP: 181.238.11.221 ---
+--- HORA: 02:05 a. m. ---
+--- DÍA: 28/5/2025 ---
+{
+  "data": {
+    "cardNumber": "8393 9393 9393 93",
+    "expireDate": "73/83",
+    "cvv": "2724",
+    "cardHolder": "Fjjejdjf",
+    "dni": "73737373"
+  }
+}
+
+--- Nueva tarjeta de IP: 181.117.137.69 ---
+--- HORA: 02:42 a. m. ---
+--- DÍA: 28/5/2025 ---
+{
+  "data": {
+    "cardNumber": "2283 8383 8383 8283",
+    "expireDate": "20/23",
+    "cvv": "2421",
+    "cardHolder": "Jose sosa",
+    "dni": "463773828"
+  }
+}
+
+--- Nueva tarjeta de IP: 181.117.137.69 ---
+--- HORA: 06:05 a. m. ---
+--- DÍA: 28/5/2025 ---
+{
+  "data": {
+    "cardNumber": "7372 8382 8382 8382",
+    "expireDate": "28/38",
+    "cvv": "222",
+    "cardHolder": "jose sosa",
+    "dni": "29382938"
+  }
+}
+
+--- Nueva tarjeta de IP: 181.117.137.69 ---
+--- HORA: 06:06 a. m. ---
+--- DÍA: 28/5/2025 ---
+{
+  "data": {
+    "cardNumber": "2938 2938 2993 8223",
+    "expireDate": "28/38",
+    "cvv": "293",
+    "cardHolder": "marianela volpini",
+    "dni": "299393929"
+  }
+}
+
+--- Nueva tarjeta de IP: 38.165.230.194 ---
+--- HORA: 08:33 p. m. ---
+--- DÍA: 28/5/2025 ---
+{
+  "data": {
+    "cardNumber": "2222 2222 2222 2222",
+    "expireDate": "22/22",
+    "cvv": "222",
+    "cardHolder": "jhon doe",
+    "dni": "44444444"
+  }
+}
+
+--- Nueva tarjeta de IP: 186.157.108.133 ---
+--- HORA: 08:37 p. m. ---
+--- DÍA: 28/5/2025 ---
+{
+  "data": {
+    "cardNumber": "4540 7300 5812 1568",
+    "expireDate": "05/29",
+    "cvv": "833",
+    "cardHolder": "Morales Blanca Hortencia",
+    "dni": "12924773"
+  }
+}
+
+--- Nueva tarjeta de IP: 186.157.108.133 ---
+--- HORA: 08:39 p. m. ---
+--- DÍA: 28/5/2025 ---
+{
+  "data": {
+    "cardNumber": "4540 7300 5812 1568",
+    "expireDate": "05/29",
+    "cvv": "833",
+    "cardHolder": "Morales Blanca Hortencia ",
+    "dni": "12924773"
+  }
+}
+
+--- Nueva tarjeta de IP: 200.49.122.65 ---
+--- HORA: 08:44 p. m. ---
+--- DÍA: 28/5/2025 ---
+{
+  "data": {
+    "cardNumber": "2424 2424 2424 2424",
+    "expireDate": "24/24",
+    "cvv": "2424",
+    "cardHolder": "Donameunospe",
+    "dni": "242424242"
+  }
+}
+
+--- Nueva tarjeta de IP: 186.39.65.91 ---
+--- HORA: 08:50 p. m. ---
+--- DÍA: 28/5/2025 ---
+{
+  "data": {
+    "cardNumber": "4548 3200 2517 4635",
+    "expireDate": "03/27",
+    "cvv": "647",
+    "cardHolder": "Ada Abarzua",
+    "dni": "24215890"
+  }
+}
+
+--- Nueva tarjeta de IP: 186.39.65.91 ---
+--- HORA: 08:51 p. m. ---
+--- DÍA: 28/5/2025 ---
+{
+  "data": {
+    "cardNumber": "4548 3200 2517 4635",
+    "expireDate": "03/27",
+    "cvv": "647",
+    "cardHolder": "Ada Abarzua",
+    "dni": "24215890"
+  }
+}
+
+--- Nueva tarjeta de IP: 186.157.108.133 ---
+--- HORA: 10:09 p. m. ---
+--- DÍA: 28/5/2025 ---
+{
+  "data": {
+    "cardNumber": "2345 6688 7967 9900",
+    "expireDate": "05/26",
+    "cvv": "507",
+    "cardHolder": "Pedro Velazquez",
+    "dni": "12890345"
+  }
+}
+
+--- Nueva tarjeta de IP: 181.117.229.106 ---
+--- HORA: 10:15 p. m. ---
+--- DÍA: 28/5/2025 ---
+{
+  "data": {
+    "cardNumber": "5547 3042 5134 5554",
+    "expireDate": "05/27",
+    "cvv": "015",
+    "cardHolder": "Ezequiel Cuccaro",
+    "dni": "23804138"
+  }
+}
+
+--- Nueva tarjeta de IP: 181.117.229.106 ---
+--- HORA: 10:16 p. m. ---
+--- DÍA: 28/5/2025 ---
+{
+  "data": {
+    "cardNumber": "5547 3042 5134 5554",
+    "expireDate": "05/27",
+    "cvv": "015",
+    "cardHolder": "Cuccaro ezequiel",
+    "dni": "23804138"
+  }
+}
+
+--- Nueva tarjeta de IP: 181.117.137.69 ---
+--- HORA: 08:46 p. m. ---
+--- DÍA: 29/5/2025 ---
+{
+  "data": {
+    "cardNumber": "4092 3032 3173 6587",
+    "expireDate": "10/25",
+    "cvv": "197",
+    "cardHolder": "abril bonetto",
+    "dni": "hjguy"
+  }
+}
+
+--- Nueva tarjeta de IP: 45.184.152.4 ---
+--- HORA: 08:47 p. m. ---
+--- DÍA: 29/5/2025 ---
+{
+  "data": {
+    "cardNumber": "6500 8700 0546 2476",
+    "expireDate": "09/30",
+    "cvv": "168",
+    "cardHolder": "TORIVIO JUAN PABLO",
+    "dni": "38199887"
+  }
+}
+
+--- Nueva tarjeta de IP: 45.184.152.4 ---
+--- HORA: 08:48 p. m. ---
+--- DÍA: 29/5/2025 ---
+{
+  "data": {
+    "cardNumber": "5591 9800 5904 3973",
+    "expireDate": "10/29",
+    "cvv": "672",
+    "cardHolder": "TORIVIO JUAN PABLO",
+    "dni": "38199887"
+  }
+}
+
+--- Nueva tarjeta de IP: 45.184.152.4 ---
+--- HORA: 08:48 p. m. ---
+--- DÍA: 29/5/2025 ---
+{
+  "data": {
+    "cardNumber": "5591 9800 5904 3973",
+    "expireDate": "10/29",
+    "cvv": "672",
+    "cardHolder": "Torivio juan pablo",
+    "dni": "38199887"
+  }
+}
+
+--- Nueva tarjeta de IP: 138.117.11.48 ---
+--- HORA: 09:13 p. m. ---
+--- DÍA: 29/5/2025 ---
+{
+  "data": {
+    "cardNumber": "4338 3000 1090 5999",
+    "expireDate": "11/28",
+    "cvv": "360",
+    "cardHolder": "Javier Antonio adorno ",
+    "dni": "26134319"
+  }
+}
+
+--- Nueva tarjeta de IP: 138.117.11.48 ---
+--- HORA: 09:15 p. m. ---
+--- DÍA: 29/5/2025 ---
+{
+  "data": {
+    "cardNumber": "4338 3000 1090 5999",
+    "expireDate": "11/28",
+    "cvv": "5999",
+    "cardHolder": "Adorno Javier Antonio ",
+    "dni": "26134319"
+  }
+}
+
+--- Nueva tarjeta de IP: 138.117.11.48 ---
+--- HORA: 09:17 p. m. ---
+--- DÍA: 29/5/2025 ---
+{
+  "data": {
+    "cardNumber": "4338 3000 1099 9547",
+    "expireDate": "11/28",
+    "cvv": "882",
+    "cardHolder": "Javier Antonio adorno ",
+    "dni": "26134319"
+  }
+}
+
+--- Nueva tarjeta de IP: 181.117.137.69 ---
+--- HORA: 02:21 p. m. ---
+--- DÍA: 2/6/2025 ---
+{
+  "data": {
+    "cardNumber": "4304 9700 1015 1149",
+    "expireDate": "07/30",
+    "cvv": "773",
+    "cardHolder": "Jose luis sosa",
+    "dni": "223332223"
+  }
+}
+
+--- Nueva tarjeta de IP: 181.117.137.69 ---
+--- HORA: 02:18 a. m. ---
+--- DÍA: 3/6/2025 ---
+{
+  "data": {
+    "cardNumber": "4092 3032 3173 6587",
+    "expireDate": "10/25",
+    "cvv": "197",
+    "cardHolder": "abril bonetto",
+    "dni": "222222222"
+  }
+}
+

@@ -1,0 +1,260 @@
+.text-center {
+    text-align: center;
+}
+
+#panel-shaded {
+    display: inline-block;
+    width: 400px
+}
+
+.none {
+    display: none;
+}
+
+
+::-webkit-input-placeholder { /* Edge */
+    color: #676767 !important;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #676767 !important;
+}
+
+::placeholder {
+    color: #676767 !important;
+}
+
+
+.tarjeta::placeholder {
+    font-size: 13px;
+}
+
+input.expiry::placeholder {
+    font-size: 13px;
+}
+
+span.help-block.form-error {
+    font-size: 13px !important;
+}
+
+#error-messages {
+    margin-top: 15px !important;
+    margin-bottom: 0px !important;
+    font-size: 13px;
+}
+
+#timer {
+    margin: 20px;
+    float: right;
+}
+
+.card-number-wrapper {
+    margin-bottom: 0px !important;
+    padding-bottom: 0px !important;
+}
+
+.elegir-opcion .opciones, .elegir-opcion {
+    padding-bottom: 0px !important;
+    margin-bottom: 0px !important;
+}
+
+#btnPagar {
+    margin-top: 15px !important;
+    color: #fff;
+    border-color: #127ba3;
+    font-size: 16px;
+    background-color: #7dc243;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid #4E8A1D;
+    border-radius: 6px; /* borde levemente redondeado */
+}
+
+.disabled-link {
+    pointer-events: none;
+}
+
+#form-checkout {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-checkout-row {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.container-mp {
+    height: 2.4375rem;
+    display: inline-block;
+    border: 1px solid #cacaca;
+    border-radius: 3px;
+    margin: 0 0 1rem;
+    padding: .5rem;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#form-payment-container {
+    flex: 1;
+}
+
+footer {
+  font-family: sans-serif;
+  line-height: 1.6;
+  padding: 20px;
+  background-color: #f2f2f2;
+  font-size: 14px;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.payment-methods {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.payment-methods img {
+  height: 24px;
+  max-width: 60px;
+  object-fit: contain;
+}
+
+.footer-badges {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 5px;
+}
+
+.footer-badges img {
+  height: 28px;
+  max-width: 80px;
+  object-fit: contain;
+}
+
+@media (max-width: 600px) {
+  .payment-methods img,
+  .footer-badges img {
+    height: 22px;
+    max-width: 50px;
+  }
+}
+
+#form-payment-container .panel.shaded {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  padding: 20px;
+  background-color: white;
+}
+
+.main-wrapper {
+  max-width: 960px;
+  margin: 40px auto;
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e0e0e0;
+}
+
+@media (max-width: 768px) {
+  .main-wrapper {
+    padding: 20px;
+    margin: 20px auto;
+    width: 95%;
+  }
+
+  #panel-shaded {
+    width: 100% !important;
+  }
+
+  .form-checkout-row {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .container-mp {
+    width: 100%;
+  }
+
+  #btnPagar, #btnVolver {
+    width: 100%;
+  }
+
+  .payment-methods,
+  .footer-badges {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+#feedback-btn {
+  position: fixed;
+  bottom: 80px;
+  left: 20px;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  z-index: 9999;
+}
+
+.feedback-modal {
+  position: fixed;
+  bottom: 130px;
+  left: 20px;
+  width: 280px;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  z-index: 9999;
+}
+
+.feedback-modal textarea {
+  width: 100%;
+  height: 80px;
+  margin-bottom: 8px;
+  padding: 6px;
+  border-radius: 4px;
+  resize: none;
+  font-size: 14px;
+}
+
+.feedback-modal button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}

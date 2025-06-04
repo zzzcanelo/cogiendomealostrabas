@@ -1,0 +1,950 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700');
+
+body {
+	font-family: Montserrat;
+}
+
+h1, h2, h3 ,h4 {
+	font-family: Montserrat !important;
+}
+
+header {
+	height: 156px;
+	background-image: url(../img/separador.jpg);
+	background-repeat: no-repeat;
+	background-position: center bottom;
+}
+
+header .logo {
+	width:318px;
+	height:100px;
+	margin: auto;
+	margin-top: 15px;
+	
+}
+
+header p {
+	color: #7cc242;
+	font-size: 21px;
+	font-weight: 400;
+	padding-top: 10px;
+	border-top: 1px solid #ccc;
+	margin-top: 10px
+	
+}
+table {
+    width: 100%;
+}
+
+.boton {
+	font-size: 20px;
+    color:#fff;
+	background-color: #7dc243;
+	border: 1px solid #4e8a1d;
+	width: 500px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	margin: auto;
+	display: block;
+	margin-bottom: 30px;
+	cursor:pointer;
+	transition: background-color 0.25s ease-out, color 0.25s ease-out;
+	
+}
+
+.boton:hover {
+	background-color: #558d27	
+}
+
+.boton2 {
+	font-size: 20px;
+    color:#fff;
+	background-color: #f07d20;
+	border: 1px solid #9f4e0d;
+	width: 500px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	margin: auto;
+	display: block;
+	margin-bottom: 30px;
+	cursor:pointer;
+    transition: background-color 0.25s ease-out, color 0.25s ease-out;	
+}
+
+.boton2:hover {
+    background-color: #aa5611	
+}
+
+.boton3 {
+	font-size: 20px;
+    color:#fff;
+	background-color: #a2a2a2;
+    border: 1px solid #616161;
+	width: 500px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	margin: auto;
+	display: block;
+	margin-bottom: 30px;
+	cursor:pointer;
+    transition: background-color 0.25s ease-out, color 0.25s ease-out;	
+}
+.boton3:hover {
+    background-color: #565656
+}
+
+.ingreso {
+	max-width:560px;
+	height:200px;
+	margin: auto;
+	margin-top: 20px;
+}
+
+.ingreso h1 {
+	font-size: 32px;
+	font-weight: 500;
+	color:#014b54;
+	letter-spacing: -1px;
+	text-align: center
+}
+
+.ingreso .ingreso-datos {
+	text-align: center;
+}
+
+.ingreso .ingreso-datos label {
+	font-size: 28px;
+	font-weight: 300;
+	color:#014b54;
+	letter-spacing: -1px;
+	text-align: center;
+	padding-bottom: 20px
+}
+
+.ingreso .ingreso-datos .aviso {
+	font-size: 15px;
+	font-weight: 400;
+	color:#014b54;
+	letter-spacing: -1px;
+	text-align: center;
+	margin-bottom: 40px
+}
+
+
+.elegir-cuenta {
+	max-width:560px;
+	height:200px;
+	margin: auto;
+	margin-top: 20px;
+	margin-bottom: 50px
+}
+.elegir-cuenta h1 {
+	font-size: 32px;
+	font-weight: 400;
+	color:#014b54;
+	letter-spacing: -1px;
+	text-align: center
+}
+.elegir-cuenta .cuenta {
+	max-width:560px;
+	background-color: #f4f4f4;
+	text-align: center;
+	padding-top:40px;
+	padding-bottom: 40px
+	
+}
+.elegir-cuenta .cuenta span {
+	display: block;
+	color: #014b54;
+	font-size: 22px
+}
+.elegir-cuenta .boton {
+	width:100%
+}
+
+.banners {
+	max-width:880px;
+	height:auto;
+    margin: auto;
+	margin-bottom: 40px;
+}
+
+.elegir-opcion {
+	max-width:880px;
+	height:auto;
+	margin: auto;
+	margin-top: 20px;
+	margin-bottom: 50px
+}
+
+.elegir-opcion .head-datos {
+	background-color: #097375;
+	width:100%;
+	padding: 15px
+}
+
+.elegir-opcion .head-datos span {
+	display: block;
+	color:#fff;
+	font-size: 24px;
+	font-weight: 300
+}
+
+.elegir-opcion .opciones {
+	width: 100%;
+	padding-top: 0px;
+	padding-bottom: 50px;
+	background-color: #f4f4f4;
+	text-align: center
+}
+
+.elegir-opcion .opciones.blanco {
+	background-color: #fff;
+}
+
+.elegir-opcion .opciones h2 {
+	font-size: 28px;
+	font-weight: 300;
+	color:#014b54;
+	letter-spacing: -1px;
+	text-align: center;
+	margin-bottom: 50px
+}
+
+.elegir-opcion .opciones .table-label {
+	margin-top: 20px;    
+    color: #097375;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 700;
+}
+.elegir-opcion .opciones .campo-importe {
+	background-color: #fff;
+
+}
+
+.elegir-opcion .opciones-recarga {
+	max-width:880px;
+	background-color: #f4f4f4;
+	text-align: center
+}
+.elegir-opcion .opciones-recarga.blanco {
+	background-color: #fff !important;
+
+}
+.elegir-opcion .header-tit {
+	margin-top: 20px;
+	background-color: #f8f8f8;
+	text-align: center;
+	color: #097375;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-weight: 700;
+	font-size: 20px;
+}
+.elegir-opcion .header-tit-exitosa {
+	margin-top: 20px;
+	background-color: #7dc243;
+	text-align: center;
+	color: #ffffff;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-weight: 700;
+	font-size: 22px;
+}
+.elegir-opcion .header-tit-rechazada {
+	margin-top: 20px;
+	background-color: #dc3d0b;
+	text-align: center;
+	color: #ffffff;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-weight: 700;
+	font-size: 22px;
+}
+.elegir-opcion .content {
+	border: solid 1px #ecececcc;
+    padding:10px;
+	margin-bottom: 10px;
+}
+
+.descripcion-planes {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+    margin-left: 0;
+	margin-bottom: 0;
+	list-style: none;
+}
+
+.descripcion-planes .nombre, .descripcion-planes .treintadias, .descripcion-planes .sietedias, .descripcion-planes .undia {
+    float: left;
+    padding-left: 10px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+	text-align: left;
+}
+
+.descripcion-planes .nombre {
+    width: 30%;
+}
+.descripcion-planes .treintadias, .descripcion-planes .sietedias, .descripcion-planes .undia {
+    width: 23.3%;
+}
+
+.descripcion-planes li {
+    margin-bottom: 5px;
+    width: 99.9%;
+    display: inline-block;
+}
+.descripcion-planes li:last-of-type {
+    margin-bottom: 0px;
+}
+
+.descripcion-planes .plan-basico .nombre {
+    background-color: #58ab41;
+}
+.descripcion-planes .plan-basico .treintadias {
+    background-color: #6cbd45;
+}
+.descripcion-planes .plan-basico .sietedias {
+    background-color: #7dc243;
+}
+.descripcion-planes .plan-basico .undia {
+    background-color: #9bca41;
+}
+.descripcion-planes .cine-premium .nombre {
+    background-color: #f37022;
+}
+.descripcion-planes .cine-premium .treintadias {
+    background-color: #f68b1f;
+}
+.descripcion-planes .cine-premium .sietedias {
+    background-color: #f9a61c;
+}
+.descripcion-planes .cine-premium .undia {
+    background-color: #fdb812;
+}
+.descripcion-planes .hd-plus .nombre {
+    background-color: #014b54;
+}
+.descripcion-planes .hd-plus .treintadias {
+    background-color: #006674;
+}
+.descripcion-planes .hd-plus .sietedias {
+    background-color: #0a7a7c;
+}
+.descripcion-planes .hd-plus .undia {
+    background-color: #158e96;
+}
+.descripcion-planes .futbol-hd .nombre {
+    background-color: #000000;
+}
+.descripcion-planes .futbol-hd .treintadias {
+    background-color: #2f2f2f;
+}
+.descripcion-planes .futbol-hd .sietedias {
+    background-color: #434343;
+}
+.descripcion-planes .futbol-hd .undia {
+    background-color: #5f5f5f;
+}
+.descripcion-planes .adultos .nombre {
+    background-color: #a33021;
+}
+.descripcion-planes .adultos .treintadias {
+    background-color: #ab3829;
+}
+.descripcion-planes .adultos .sietedias {
+    background-color: #ce412f;
+}
+.descripcion-planes .adultos .undia {
+    background-color: #dd4531;
+}
+.descripcion-planes .decoadic .nombre {
+    background-color: #475792;
+}
+.descripcion-planes .decoadic .treintadias {
+    background-color: #596aab;
+}
+.descripcion-planes .decoadic .sietedias {
+    background-color: #6b7dc1;
+}
+.descripcion-planes .decoadic .undia {
+    background-color: #778bd8;
+}
+
+.forma-pago {
+	width: 38%;
+	padding: 20px;
+	display: inline-flex;
+	margin-left: 70px;
+}
+.forma-pago .radio [type=radio] {
+	transform: scale(2);
+	-ms-transform: scale(2);
+	-webkit-transform: scale(2);
+	margin: 0;
+	display: inline;
+	cursor: pointer;
+}
+.forma-pago .radio {
+	padding-right: 20px;
+    padding-top: 20px;
+}
+.forma-pago label {
+	cursor: pointer
+}
+.forma-pago .nombre {
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.elegir-opcion .opciones-recarga .aviso-recarga-minima, .elegir-opcion .opciones-recarga .aviso-precios {
+	width:100%;
+	background: #d8d8d8;
+	font-family: Montserrat;
+	text-align: center;
+	font-size: 16px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	padding-left: 5px;
+	padding-right: 5px;
+	color: #014b54
+}
+
+.elegir-opcion .opciones-recarga .aviso-recarga-minima {
+	border-bottom: 1px solid #999999
+	
+}
+
+
+.elegir-opcion .opciones-recarga .seleccionar-tarjeta, table thead th {
+    color: #097375
+} 
+
+
+.elegir-opcion .opciones-recarga .seleccionar-tarjeta label {
+    font-size: 20px;
+	padding-bottom: 10px;
+	color: #097375
+} 
+
+.elegir-opcion .opciones-recarga .seleccionar-tarjeta select {
+    font-size: 16px;
+} 
+ 
+
+.elegir-opcion .opciones-recarga .seleccionar-tarjeta .tabla-recarga, table tfoot {
+    background: #929292;
+    color: #fff;
+	font-weight: 400 !important
+}
+
+.elegir-opcion .opciones-recarga .campo-recarga .monto-recarga {
+    background: #fff;
+	font-size: 16px
+}
+
+.elegir-opcion .boton-recargar {
+    padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.elegir-opcion .lugares-tarjetas {
+	max-width:880px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background-color: #f4f4f4;
+	text-align: center
+}
+
+.elegir-opcion .lugares-tarjetas h2 {
+	font-size: 28px;
+	font-weight: 300;
+	color:#014b54;
+	letter-spacing: -1px;
+	text-align: center;
+	margin-bottom: 20px
+}
+
+.elegir-opcion .lugares-tarjetas h3 {
+	font-size: 22px;
+	font-weight: 300;
+	color:#014b54;
+	letter-spacing: -1px;
+	text-align: center;
+	margin-bottom: 20px
+}
+
+.elegir-opcion .lugares-tarjetas .opcion-prin-1, .elegir-opcion .lugares-tarjetas .opcion-prin-2, .elegir-opcion .lugares-tarjetas .opcion-prin-3 {
+	width: 33.3%;
+	height: auto;
+	float:left;
+	margin-bottom: 30px;
+}
+
+
+.elegir-opcion .lugares-tarjetas .opcion-prin-1 span , .elegir-opcion .lugares-tarjetas .opcion-prin-2 span , .elegir-opcion .lugares-tarjetas .opcion-prin-3 span {
+	display: block;
+	font-size:22px;
+	font-weight: 300;
+	color:#014b54;
+}
+
+.elegir-opcion .lugares-tarjetas .aviso p {
+	display: block;
+	font-size:16px;
+	font-weight: 300;
+	color:#014b54;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 10px;
+	padding-right: 10px
+}
+
+.elegir-opcion .lugares-tarjetas .tarjetas {
+	margin-bottom: 60px;
+	margin-top: 100px
+}
+
+.elegir-opcion .lugares-tarjetas .tarjetas .tarjeta {
+	margin-bottom: 20px
+}
+
+.elegir-opcion .pago {
+	max-width:880px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background-color: #f4f4f4;
+	text-align: center
+	
+}
+.elegir-opcion .aceptado {
+	background-color: #619f2e;
+	width: 80%;
+	height: 100px;
+	margin: auto;
+	background-image: url(../img/check.svg);
+	padding-left: 60px;
+	background-position: 10px center;
+	background-repeat: no-repeat;
+	background-size: 19% 48%;
+	display: table;
+
+}
+
+.elegir-opcion .rechazado {
+	background-color: #dc3d0b;
+	width: 80%;
+	height: 100px;
+	margin: auto;
+	background-image: url(../img/error.svg);
+	padding-left: 60px;
+	background-position: 10px center;
+	background-repeat: no-repeat;
+	background-size: 19% 48%;
+	display: table;
+  
+}
+.elegir-opcion .aceptado span, .elegir-opcion .rechazado span  {
+	color: #FFFFFF;
+	font-weight: 500;
+	font-size: 24px;
+	display: table-cell;
+    vertical-align: middle;
+}
+.no-habilitado {
+	color: red !important;
+}
+
+.recarga-sos .campo-recarga input.sos {
+    width: 80px !important;
+    margin-top: 5px !important;
+	transform: scale(2);
+    -ms-transform: scale(2);
+    -webkit-transform: scale(2)
+}
+.elegir-opcion .campo-recarga label.sos span {
+    color: #f6521f;
+}
+
+.elegir-opcion .campo-recarga label.sos {
+    line-height: 4.8 !important;
+    color: #0a7a7c;
+    font-size: 16px;
+    cursor: pointer;
+	margin-bottom: 0;
+}
+
+table.unstriped.recarga-sos {
+    border: 1px solid #f1f1f1;
+}
+td.campo-recarga {
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.elegir-opcion .campo-recarga div.sos {
+    line-height: 4.8 !important;
+    color: #0a7a7c;
+    font-size: 16px;
+    padding-left: 20px;
+	text-align: left;
+}
+
+.elegir-opcion .recarga-sos .campo-recarga .dias {
+	margin: 1rem 0 1rem;
+	padding: 0.5rem;
+	border: 1px solid #cacaca;
+	border-radius: 3px;
+	background-color: #f7f7f7;
+	font-family: inherit;
+	font-size: 1rem;
+	line-height: inherit;
+	color: #686868;
+	width: 50px;
+	text-align: center;
+	float: right;
+}
+
+.form-recarga-aviso {
+    background-color: #8f8f8f;
+    font-weight: bold;
+    color: #fff;
+    font-size: 14px;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    padding-top: 23px;
+    padding-bottom: 20px;
+	margin-top: 30px;
+    margin-bottom: 30px;
+    width: 100%;
+    line-height: 20px;
+    letter-spacing: 0.3px;
+}
+
+.form-mensaje-aviso{
+	background-image: url(../img/warning.svg);
+    background-color: #e76f35;
+    margin-top:30px;
+    border-radius: 2px;
+    padding: 30px;
+    text-align: left;
+    background-position: 15px center;
+    background-size: 38px 38px;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 300;
+    padding-left: 65px !important;
+    padding-right: 20px !important;
+    padding-top: 23px;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    line-height: 20px;
+    letter-spacing: 0.3px;
+}
+.form-mensaje-exito{
+	background-image: url(../img/check.svg);
+    background-color: #619f2e;
+    margin-top:30px;
+    border-radius: 2px;
+    padding: 30px;
+    background-position: 15px center;
+    background-size: 38px 38px;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 300;
+    padding-left: 65px !important;
+    padding-right: 20px !important;
+    padding-top: 23px;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    line-height: 20px;
+    letter-spacing: 0.3px;
+	text-align: left;
+}
+.form-mensaje-error{
+	background-image: url(../img/error.svg);
+    background-color: #ec3b23;
+    margin-top:30px;
+    border-radius: 2px;
+    padding: 30px;
+    background-position: 15px center;
+    background-size: 38px 38px;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 300;
+    padding-left: 65px !important;
+    padding-right: 20px !important;
+    padding-top: 23px;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    line-height: 20px;
+    letter-spacing: 0.3px;
+	text-align: left;
+}
+.form-mensaje-exito a, .form-mensaje-error a, .form-mensaje-aviso a {
+    color: #fff;
+    text-decoration: underline;
+}
+.elegir-opcion .header-tit-pendiente {
+	margin-top: 20px;
+	background-color: #f9a61c;
+	text-align: center;
+	color: #ffffff;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-weight: 700;
+	font-size: 22px;
+}
+
+.elegir-opcion .opciones-recarga .seleccionar-tarjeta .tabla-recarga, td {
+    padding-top: 18px !important;
+}
+
+.elegir-opcion .opciones .tit-saldos {
+	margin-bottom: 25px;
+}
+
+.prepago-saldo-container {
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 50px;
+}
+
+.prepago-saldo-container .plan {
+	display: flex;
+	flex-direction: column;
+	width: 20%;
+}
+
+span.plan-titulo.basico {
+	background-color: #6DA950;
+	color: #fff;
+	padding-top: 7px;
+	padding-bottom: 6px;
+}
+
+span.plan-titulo.cine {
+	background-color: #E37839;
+	color: #fff;
+	padding-top: 7px;
+	padding-bottom: 6px;
+}
+
+span.plan-titulo.futbol {
+	background-color: #000000;
+	color: #fff;
+	padding-top: 7px;
+	padding-bottom: 6px;
+}
+
+span.plan-titulo.adultos {
+	background-color: #c53820;
+	color: #fff;
+	padding-top: 7px;
+	padding-bottom: 6px;
+}
+
+span.plan-titulo.deco {
+	background-color: #4A578E;
+	color: #fff;
+	padding-top: 7px;
+	padding-bottom: 6px;
+}
+
+span.plan-titulo.full {
+	background-color: #2A8E96;
+	color: #fff;
+	padding-top: 7px;
+	padding-bottom: 6px;
+}
+
+span.plan-dias {
+	background-color: #e7e7e7;
+	padding-top: 8px;
+	padding-bottom: 7px;
+	border: 1px solid #d5d4d4;
+	color: #014b54;
+	font-size: 18px
+}
+
+span.plan-dias .sin-dias {
+	color: #d80000;
+}
+
+.prepago-saldo-container#full .plan {
+	width: 33.3%;
+}
+
+
+@media only screen and (max-width: 680px) {
+	header .logo {
+		width: 280px;
+		height: 100px;
+		margin: auto;
+		margin-top: 15px;
+	
+	}
+	.logo img {
+		width: 280px;
+		text-align: center;
+	}
+	header p {
+		font-size: 19px;
+	}
+	.elegir-opcion .opciones .campo-importe {
+		font-size: 0.9rem;
+	}
+	.boton,.boton2, .boton3 {
+		width: 280px;
+		font-size: 16px
+	
+	}
+	.elegir-opcion .opciones-recarga .seleccionar-tarjeta, table thead th {
+		font-size: 14px;
+	}
+	.ingreso .ingreso-datos label {
+		font-size: 16px;
+	}
+	.ingreso h1 {
+		font-size: 28px;
+	}
+	.elegir-cuenta h1 {
+		font-size: 28px;
+	}
+	.elegir-opcion .header-tit {
+		font-size: 16px;
+	}
+	.elegir-opcion .header-tit-exitosa, .elegir-opcion .header-tit-rechazada {
+		font-size: 18px;
+	}
+	.elegir-opcion .opciones-recarga .seleccionar-tarjeta, table thead th {
+		font-size: 14px;
+	}
+	.elegir-opcion .opciones h2 {
+		margin-bottom: 20px;
+	}
+	.ingreso .ingreso-datos .aviso {
+		font-size: 12px;
+		letter-spacing: 0px;
+	}
+	.elegir-cuenta .cuenta span {
+		font-size: 18px
+	}
+	.elegir-opcion .opciones {
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+	.elegir-opcion .head-datos span {
+		display: block;
+		color:#fff;
+		font-size: 18px;
+		font-weight: 300
+	}
+	.elegir-opcion .opciones h2 {
+		font-size: 22px;
+	}
+	
+	.elegir-opcion .opciones .table-label {
+		font-size: 14px;
+		padding-top: 10px !important;
+	}
+	.descripcion-planes .nombre, .descripcion-planes .treintadias, .descripcion-planes .sietedias, .descripcion-planes .undia {
+		float: none;
+		width: 100%;
+	}
+	.forma-pago {
+		width: 100%;
+		padding: 20px;
+		display: block;
+		margin-left:auto
+	}
+	.forma-pago .radio {
+		 padding-right: 0px; 
+		 padding-top: 0px;
+		 padding-bottom: 10px;
+	}
+	.elegir-opcion .opciones-recarga .seleccionar-tarjeta table tbody th, table tbody td {
+		font-size: 14px;
+	}
+	.elegir-opcion .lugares-tarjetas h2 {
+		font-size: 22px;
+	}	
+	
+	.elegir-opcion .lugares-tarjetas h3 {
+		font-size: 18px;
+		margin-bottom: 20px
+	}
+	.elegir-opcion .lugares-tarjetas .opcion-prin-1, .elegir-opcion .lugares-tarjetas .opcion-prin-2, .elegir-opcion .lugares-tarjetas .opcion-prin-3 {
+		width: 100%;
+	}
+	.elegir-opcion .lugares-tarjetas .opcion-prin-1 span , .elegir-opcion .lugares-tarjetas .opcion-prin-2 span , .elegir-opcion .lugares-tarjetas .opcion-prin-3 span {
+		font-size:18px;
+	}
+	.elegir-opcion .aceptado, .elegir-opcion .rechazado {
+		padding-left: 66px;
+		padding-right: 20px;
+		width:100%
+	}
+	.elegir-opcion .aceptado span, .elegir-opcion .rechazado span  {
+		font-weight: 500;
+		font-size: 16px;
+		display: table-cell;
+		vertical-align: middle;
+	}
+	.elegir-opcion .opciones-recarga .aviso-recarga-minima, .elegir-opcion .opciones-recarga .aviso-precios {
+		font-size: 14px;
+
+	}
+	.elegir-opcion .opciones-recarga .campo-recarga .monto-recarga {
+		font-size: 14px;
+	}
+	.MensajeError 
+		{
+			color: red;
+		}
+
+	.elegir-opcion .recargar-saldo .campo-recarga input.sos {
+		width: 80px !important;
+		margin-top: 5px !important;
+	}
+	.elegir-opcion .campo-recarga label.sos {
+		line-height: 1.8 !important;
+		font-size: 14px;
+		padding-top:10px;
+		padding-bottom:10px
+	}
+	.elegir-opcion .campo-recarga div.sos {
+		line-height: 1.8 !important;
+		font-size: 14px;
+		padding-top:10px;
+		padding-bottom:10px;
+		padding-left:5px;
+	}
+
+	.elegir-opcion .opciones-recarga .seleccionar-tarjeta .tabla-recarga, .elegir-opcion .campo-recarga {
+		padding-top: 10px !important;
+		padding-bottom: 5px !important;
+	
+	} 
+
+	.prepago-saldo-container {
+		flex-wrap: wrap;
+	}
+	.prepago-saldo-container .plan {
+		width: 50%;
+	}
+	span.plan-titulo {
+		font-size: 14px;
+	}
+	span.plan-dias {
+		font-size: 15px;
+	}
+	.prepago-saldo-container#full .plan {
+		width: 100%;
+	}
+}
